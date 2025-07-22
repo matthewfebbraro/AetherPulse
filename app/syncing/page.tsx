@@ -12,7 +12,7 @@ export default function Loading() {
     const router = useRouter();
     const { user } = useAuth();
 
-    //USER PROFILE
+    ///USER PROFILE
     const setUserProfileSTORE = getGlobalDataState().setUserProfileSTORE;
     const setLiveUserProfileState = useGlobalData((s) => s.setLiveUserProfileState);
 
