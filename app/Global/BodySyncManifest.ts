@@ -1,6 +1,3 @@
-import { liftIndexData } from "../Global/UpdateDatabase/liftIndexData"
-
-
 export type GlobalSTORE = {
 
   //USERID INFO
@@ -225,7 +222,6 @@ export type FitnessSettingsData = {
   activeSession: boolean;
   totalWorkouts: number;
   totalPRs: number;
-  liftIndex: LiftIndexData;
 };
 
 export type LiftIndexData = {
@@ -348,8 +344,7 @@ export const defaultProfile: UserProfile = {
     activeSession: false,
     totalWorkouts: 0,
     totalPRs: 0,
-    liftIndex: liftIndexData(),
-  },
+     },
 
   dailyGoalSettings: {
     dailyGoalToken: false,
