@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter, Exo_2 } from 'next/font/google';
 import '../app/globals.css';
-import RealScreenHeight from "./LoadingComponents/ScreenSizer"
 const inter = Inter({ subsets: ['latin'] });
 
 
 export const metadata: Metadata = {
-  title: 'BodySync App',
-  description: 'Powered by FusionCore',
+  title: 'AetherPulse',
 };
 
 const exo2 = Exo_2({
