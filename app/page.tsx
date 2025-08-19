@@ -1,4 +1,4 @@
-import HomeComp from '@/app/LandingPageComponents/HomePage';
+import HomeComp from '@/app/MainPage/HomePage';
 
 export default function HomePage() {
   return <HomeComp />;
