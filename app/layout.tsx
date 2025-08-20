@@ -13,8 +13,6 @@ const exo2 = Exo_2({
   weight: ['400', '700'],
 });
 
-
-
 {/* All your app content here */ }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,46 +1,5 @@
 export type GlobalSTATE = {
 
-  //USERID INFO
-  userProfile: UserProfile | null;
-  setUserProfile: (profile: UserProfile | ((prev: UserProfile | null) => UserProfile)) => void;
-
-  syncHistory: SyncData[] | null;
-  setSyncHistory: (data: SyncData[] | ((prev: SyncData[] | null) => SyncData[])) => void;
-
-  fitnessHistory: {};
-  setFitnessHistory: (data: { [date: string]: FitnessSyncData }) => void;
-
-  latestSync: any | null;
-  setLatestSync: (sync: any) => void;
-
-  latestFitnessSync: any | null;
-  setLatestFitnessSync: (sync: any) => void;
-
-
-  //FITNESS INFO
-  temporaryFitnessSync: any | null;
-  setTemporaryFitnessSync: (data: {
-    profileSlot: string;
-    bodygroup: string;
-  }) => void;
-
-  liftIndex: Record<string, any>;
-  setLiftIndex: (
-    value: Record<string, any> | ((prev: Record<string, any>) => Record<string, any>)
-  ) => void;
-
-  workoutSessionData: WorkoutSessionData;
-  setWorkoutSessionData: (
-    updater: WorkoutSessionData | ((prev: WorkoutSessionData) => WorkoutSessionData)
-  ) => void;
-
-  activeSessionStatus: boolean;
-  setActiveSessionStatus: (value: boolean) => void;
-
-  //OVERVIEW INFO
-  selectedSector2: string;
-  setSelectedSector2: (value: string) => void;
-
   pageDefault: string;
   selectedPage: string;
   setSelectedPage: (value: string) => void;
@@ -52,26 +11,6 @@ export type GlobalSTATE = {
   //CONTROL HUB INFO
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
-
-  //SYNC INFO
-  hasDawnSyncedToday: boolean;
-  setHasDawnSyncedToday: (value: boolean) => void;
-
-  hasDuskSyncedToday: boolean;
-  setHasDuskSyncedToday: (value: boolean) => void;
-
-  hasFitnessSyncedToday: boolean;
-  setHasFitnessSyncedToday: (value: boolean) => void;
-
-  //SYNC INFO
-  DawnPoints: number;
-  setDawnPoints: (value: number) => void;
-
-  DuskPoints: number;
-  setDuskPoints: (value: number) => void;
-
-  FitnessPoints: number;
-  setFitnessPoints: (value: number) => void;
 
 };
 
@@ -156,7 +95,7 @@ export type SyncsFlatMap = {
 //LATEST SYNC
 export type SyncData = {
   id: string;
-  date: string; 
+  date: string;
   weight_lbs?: number;
   weight_kg?: number;
   steps?: number;

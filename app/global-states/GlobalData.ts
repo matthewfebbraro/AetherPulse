@@ -15,11 +15,8 @@ export const useGlobalData = create<GlobalSTATE>()(
             selectedHomePage: "home",
             setSelectedHomePage: (value: string) => set({ selectedHomePage: value }),
 
-            //CONTROL HUB INFO
             isOpen: false,
             setIsOpen: (value) => set({ isOpen: value }),
-
-
         }),
 
         {

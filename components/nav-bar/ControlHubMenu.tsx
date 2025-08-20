@@ -6,9 +6,6 @@ import { useRouter } from 'next/navigation';
 import { Lock, Rotate3d, ListChecks, Dumbbell, Utensils, Globe, LogOut } from 'lucide-react';
 import { Crown, Flame, Zap, Star, Shield, Atom, Heart, Bird, Dna, KeyRound, Settings, Mars, Venus, Fingerprint } from 'lucide-react';
 import { Sun, Moon, CircleCheckBig, CircleArrowLeft, CircleArrowRight, SmilePlus, Webhook, StepForward, StepBack } from "lucide-react";
-import PrimeTasksTile from "@/components/CoreTiles/DailyGoalsButton"
-import StrengthArchiveTile from "@/components/CoreTiles/StrengthArchiveButton"
-import MacroVaultTile from "@/components/CoreTiles/NutritionLogButton"
 
 export default function ControlHubMenu() {
 
