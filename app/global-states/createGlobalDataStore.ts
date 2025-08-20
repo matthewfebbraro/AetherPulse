@@ -1,8 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { UserProfile, SyncData, FitnessSyncData } from "@/lib/hooks/CoreData";
 import { Niconne } from 'next/font/google';
-import type { GlobalSTORE } from "./BodySyncManifest"
+import type { GlobalSTORE } from "./type-manifest"
 
 
 export const createGlobalDataStore = (storageKey: string) =>
