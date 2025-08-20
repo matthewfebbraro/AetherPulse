@@ -1,5 +1,5 @@
-import HomeComp from '@/app/MainPage/HomePage';
+import LandingPage from '@/app/home-page/landing-page';
 
 export default function HomePage() {
-  return <HomeComp />;
+  return <LandingPage />;
 }
