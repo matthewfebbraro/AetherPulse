@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { GlobalSTATE } from "../../global-states/type-manifest"
+import type { GlobalSTATE } from "@/app/global-states/type-manifest"
 import { Niconne } from 'next/font/google';
 
 export const useGlobalData = create<GlobalSTATE>()(
