@@ -1,23 +1,3 @@
-export type GlobalSTORE = {
-
-  //USERID INFO
-  userProfileSTORE: UserProfile | null;
-  setUserProfileSTORE: (profile: UserProfile | ((prev: UserProfile | null) => UserProfile)) => void;
-
-  syncHistorySTORE: SyncData[] | null;
-  setSyncHistorySTORE: (data: SyncData[] | ((prev: SyncData[] | null) => SyncData[])) => void;
-
-  fitnessHistorySTORE: {};
-  setFitnessHistorySTORE: (data: { [date: string]: FitnessSyncData }) => void;
-
-  latestSyncSTORE: any | null;
-  setLatestSyncSTORE: (sync: any) => void;
-
-  latestFitnessSyncSTORE: any | null;
-  setLatestFitnessSyncSTORE: (sync: any) => void;
-
-};
-
 export type GlobalSTATE = {
 
   //USERID INFO
