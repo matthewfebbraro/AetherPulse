@@ -24,7 +24,7 @@ export default function LandingPage() {
                 style={{
                     backgroundImage: "url(/images/home-page-background.jpg)",
                     minHeight: '100%',
-                    height: '100%', // Not 100vh!
+                    height: '100%',
                 }}
             />
 
@@ -49,19 +49,21 @@ export default function LandingPage() {
                                 makes growth visible and motivating — turning consistency into a journey
                                 you actually want to keep playing.
                             </div>
-                            <button onClick={() => setPage("4")} className="relative mt-2 m-3 p-2 z-10 flex rounded-xl justify-center h-[85px] z-20 w-[94%] flex items-center 
+                            <div className="absolute bottom-20 flex justify-center w-full">
+                                <button onClick={() => setPage("4")} className="relative mt-2 m-3 p-2 flex rounded-xl justify-center h-[85px] z-20 w-[94%] flex items-center 
             justify-center  
            border border-indigo-300 overflow-hidden">
-                                <p className="absolute h-full w-full bg-[rgba(39,87,133,0.4)]" />
-                                <p className="text-[28px] font-semibold pb-1 z-20">Download APK</p>
-                            </button>
+                                    <p className="absolute h-full w-full bg-[rgba(39,87,133,0.4)]" />
+                                    <p className="text-[28px] font-semibold pb-1 z-20">Download APK</p>
+                                </button>
+                            </div>
                         </div>
                     )}
                     {Page === "2" && (
                         <div>
                             <div className="font-semibold text-[42px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Free Version</div>
 
-                            <div className="overflow-y-auto h-[390px]">
+                            <div className="overflow-y-auto h-[380px]">
                                 <div className="p-4 text-gray-600 space-y-2 text-center">
 
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1 text-gray-500">Track for Free</p>
@@ -132,7 +134,7 @@ export default function LandingPage() {
                     {Page === "3" && (
                         <div>
                             <div className="font-semibold text-[42px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Pro Version</div>
-                            <div className="overflow-y-auto h-[390px]">
+                            <div className="overflow-y-auto h-[380px]">
                                 <div className="p-4 text-gray-600 space-y-2 text-center">
 
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1 text-gray-500">$5.00 Subscription</p>
@@ -184,7 +186,7 @@ export default function LandingPage() {
                     {Page === "4" && (
                         <div>
                             <div className="font-semibold text-[36px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Pre-Release Access</div>
-                            <div className="p-4 overflow-y-auto h-[390px]">
+                            <div className="p-4 overflow-y-auto h-[380px]">
                                 <div className="text-gray-600 space-y-2 text-center">
                                     <p className="text-[18px] pt-2 pb-3 px-3 font-semibold bg-white/30 rounded-xl pb-1 text-center text-gray-500 text-lg italic mt-2">
                                         Scroll down to access your download & installation guide.

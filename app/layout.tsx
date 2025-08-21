@@ -5,7 +5,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 
 export const metadata: Metadata = {
-  title: 'AetherPulse',
+  title: 'AetherPulse | The Portal to BodySync',
+  description: 'Access the BodySync system — gamify your fitness journey and unlock your synced potential.',
 };
 
 const exo2 = Exo_2({
@@ -21,8 +22,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="manifest" href="/manifest.json" crossOrigin="anonymous" />
         <meta name="theme-color" content="#000000" />
-        <link rel="icon" href="/icons/icon-512x512.png" />
-        <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
+        <link rel="icon" href="/icons/aether-512x512.png" />
+        <link rel="apple-touch-icon" href="/icons/aether-512x512.png" />
+
+        <title>Aether Pulse | The Portal to BodySync</title>
+        <meta name="description" content="Access the BodySync system — gamify your fitness journey and unlock your synced potential." />
+
+
+        <meta property="og:title" content="AetherPulse | The Portal to BodySync" />
+        <meta property="og:description" content="Level up your fitness through BodySync. Track your health, earn XP, and discover hidden glyphs." />
+        <meta property="og:image" content="/icons/aether-512x512.png" />
+        <meta property="og:url" content="https://www.aetherpulse.one" />
+        <meta property="og:type" content="website" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Aether Pulse",
+              url: "https://www.aetherpulse.one",
+              description: "Access the BodySync system — gamify your fitness journey and unlock your synced potential."
+            }),
+          }}
+        />
+
       </head>
 
       <body className={`${inter.className} ${exo2.className} text-white`}>
