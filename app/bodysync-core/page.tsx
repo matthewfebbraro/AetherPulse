@@ -42,7 +42,7 @@ export default function LandingPage() {
                     {Page === "1" && (
                         <div>
                             <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
-                                BodySync Core is everything that BodySync is, only stripped down to just the basic. Simple user interface, no gamifed experience, no experience points. no background customization, just tracking. just data.
+                                BodySync Core is everything that BodySync is, only stripped down to just the basics. Simple user interface, no gamifed experience, no experience points. no background customization, just tracking. just data.
                             </div>
                             <div className="absolute bottom-20 flex justify-center w-full">
                                 <button onClick={() => setPage("4")} className="relative mt-2 m-3 p-2 flex rounded-xl justify-center h-[85px] z-20 w-[94%] flex items-center 

@@ -48,6 +48,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7X2F8DXH8"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B7X2F8DXH8');
+    `,
+          }}
+        />
+
       </head>
 
       <body className={`${inter.className} ${exo2.className} text-white`}>
