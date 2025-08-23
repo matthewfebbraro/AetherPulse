@@ -171,8 +171,8 @@ export default function LandingPage() {
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1"></p>
                                     <p>
                                         If you encounter any issues or have feedback to share, please contact us at
-                                        <a href="mailto:aetherpulse.one@protonmail.com" className="underline text-blue-500 ml-1">
-                                            aetherpulse.one@protonmail.com
+                                        <a href="mailto:aetherpulse.one@gmail.com" className="underline text-blue-500 ml-1">
+                                            aetherpulse.one@gmail.com
                                         </a>.
                                     </p>
                                     <p>

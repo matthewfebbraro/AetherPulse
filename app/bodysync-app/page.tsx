@@ -199,8 +199,8 @@ export default function LandingPage() {
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1"></p>
                                     <p>
                                         If you encounter any issues or have feedback to share, please contact us at
-                                        <a href="mailto:aetherpulse.one@protonmail.com" className="underline text-blue-500 ml-1">
-                                            aetherpulse.one@protonmail.com
+                                        <a href="mailto:aetherpulse.one@gmail.com" className="underline text-blue-500 ml-1">
+                                            aetherpulse.one@gmail.com
                                         </a>.
                                     </p>
                                     <p>
@@ -228,7 +228,7 @@ export default function LandingPage() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/BodySync-v2.1.0.apk";
+                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/bodysync-app.apk";
                                     }}
                                     className="bg-[rgba(39,87,133,0.4)] relative mt-2 max-w-sm w-full z-10 flex rounded-xl justify-center h-[85px] z-20 flex-col w-full flex items-center 
             justify-center 
