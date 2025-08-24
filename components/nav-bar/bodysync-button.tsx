@@ -7,7 +7,7 @@ const router = useRouter();
   return (
     <button
       onClick={() => {
-        router.push('/bodysync-app');
+        router.push('/bodysync-download');
         setIsOpen(false);
       }}
       className="w-[100px] bg-cover bg-center bg-no-repeat bg-[url('/icons/bodysync-icon.png')] h-[100px] rounded-xl py-4 leading-none gap-1

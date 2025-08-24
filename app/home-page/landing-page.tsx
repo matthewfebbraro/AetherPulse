@@ -33,8 +33,8 @@ export default function LandingPage() {
                     <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')]" />
                 </div>
                 <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
-                    <div className="absolute text-[20px] text-gray-600  mb-12 mr-28">powered by</div>
-                    <div className="absolute text-[50px] text-gray-600  mt-2">AetherPulse</div>
+                    <div className="absolute text-[20px] text-gray-600 font-semibold  mb-12 mr-28">powered by</div>
+                    <div className="absolute text-[50px] text-gray-600 font-semibold  mt-2">AetherPulse</div>
 
                 </div>
             </div>
@@ -50,9 +50,9 @@ export default function LandingPage() {
 
                             <div className="text-xl font-semibold text-center text-gray-600 mb-4">Available Apps</div>
 
-                            <div className="flex flex-row justify-center w-full pr-4">
+                            <div className="flex flex-row justify-center w-full">
                                 <button onClick={() => {
-                                    router.push('/bodysync-app');
+                                    router.push('/bodysync-download');
                                 }}
                                     className="flex flex-col items-center">
                                     <div className="bg-cover bg-center bg-no-repeat bg-[url('/icons/bodysync-icon.png')] rounded-xl h-[150px] w-[150px]">
@@ -60,15 +60,7 @@ export default function LandingPage() {
                                     </div>
                                     <div className="text-lg font-bold text-gray-600 mb-1 text-center">Gamified Health & Fitness Journey</div>
                                 </button>
-                                <button onClick={() => {
-                                    router.push('/bodysync-core');
-                                }}
-                                    className="flex flex-col items-center">
-                                    <div className="bg-cover bg-center bg-no-repeat bg-[url('/icons/bodysync-core-icon.png')] rounded-xl h-[150px] w-[150px]">
-                                        <div className="text-lg font-bold text-white mb-1 text-center">BodySync Core</div>
-                                    </div>
-                                    <div className="text-lg font-bold text-gray-600 mb-1 text-center ">BodySync,but only the basics</div>
-                                </button>
+                               
                                 {/* Add more app cards here */}
                             </div>
                         </div>

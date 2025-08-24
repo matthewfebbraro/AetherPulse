@@ -27,7 +27,7 @@ export default function ControlHubMenu() {
           {/*TILE 7*/}
           <BodySyncApp />
           {/*TILE 8*/}
-          <BodySyncCoreApp />
+         
           {/*TILE 9*/}
       
         </div>
@@ -37,8 +37,8 @@ export default function ControlHubMenu() {
               router.push('/');
               setIsOpen(false);
             }}
-            className="w-full h-[78px]  rounded-xl py-4 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
-            AetherHome<Globe size={36} />
+            className="w-full font-semibold h-[78px] text-[25px] rounded-xl pb-2 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
+            AetherHome
           </button>
         </div>
       </div>
