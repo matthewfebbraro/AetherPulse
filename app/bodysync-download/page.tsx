@@ -228,13 +228,13 @@ export default function LandingPage() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/bodysync-app.apk";
+                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/BodySync.apk";
                                     }}
                                     className="bg-[rgba(39,87,133,0.4)] relative mt-2 max-w-sm w-full z-10 flex rounded-xl justify-center h-[85px] z-20 flex-col w-full flex items-center 
             justify-center 
            border border-indigo-300 overflow-hidden">
                                     <p className="absolute pb-6 text-[28px] font-semibold">Unlock Sync Access</p>
-                                    <p className=" absolute pt-6 text-base text-white mt-2 italic">APK Download — 113MB</p>
+                                    <p className=" absolute pt-6 text-base text-white mt-2 italic">APK Download — 110MB</p>
                                 </button>
                             </div>
                         </div>
