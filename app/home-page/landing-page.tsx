@@ -34,7 +34,7 @@ export default function LandingPage() {
                 </div>
                 <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
                     <div className="absolute text-[20px] text-gray-600 font-semibold  mb-12 mr-28">powered by</div>
-                    <div className="absolute text-[50px] text-gray-600 font-semibold  mt-2">AetherPulse</div>
+                    <div className="absolute text-[40px] text-gray-600 font-semibold  mt-2">AetherPulse</div>
 
                 </div>
             </div>

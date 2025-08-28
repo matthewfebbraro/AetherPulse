@@ -34,14 +34,14 @@ export default function LandingPage() {
                 </div>
                 <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
                     <div className="absolute text-[20px] text-gray-600 font-semibold  mb-14">BodySync InfoDex</div>
-                    <div className="absolute text-[50px] text-gray-600 font-semibold  mt-2">SyncSim</div>
+                    <div className="absolute text-[40px] text-gray-600 font-semibold  mt-2">SyncSim</div>
                 </div>
             </div>
             <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
                 <div className="relative flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
                     <div>
                         <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
-                           This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
+                            This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
                         </div>
                     </div>
                 </div>

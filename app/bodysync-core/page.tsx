@@ -34,7 +34,7 @@ export default function LandingPage() {
                 </div>
                 <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
                     <div className="absolute text-[20px] text-gray-600  mb-14">powered by AetherPulse</div>
-                    <div className="absolute text-[50px] text-gray-600  mt-2">BodySyncCore</div>
+                    <div className="absolute text-[40px] text-gray-600  mt-2">BodySyncCore</div>
                 </div>
             </div>
             <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
