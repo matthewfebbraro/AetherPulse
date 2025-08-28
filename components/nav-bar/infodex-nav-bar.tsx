@@ -1,11 +1,11 @@
 "use client";
 import { useGlobalData } from "@/app/global-states/GlobalData";
 import { useState, useEffect } from "react";
-import ControlHubMenu from './ControlHubMenu';
-import { Crown, Flame, Zap, Star, Shield, Atom, Heart, Bird } from 'lucide-react';
+import InfoDexMenu from './info-dex-menu';
+import { ScrollText, Flame, Zap, Star, Shield, Atom, Heart, Bird } from 'lucide-react';
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function NavBar() {
+export default function InfoNavBar() {
 
   const toggleMenu = () => {
     const next = !isOpen;
@@ -26,7 +26,7 @@ export default function NavBar() {
           onClick={toggleMenu}
           className="text-xl font-bold tracking-wide transition-all"
         >
-          {isOpen ? <p className="flex items-center justify-center gap-2">Navigation<Atom size={20} /> </p> : <p className="flex items-center justify-center gap-2">Navigation<Atom size={20} /> </p>}
+          {isOpen ? <p className="flex items-center justify-center gap-2">InfoNav<ScrollText size={20} /> </p> : <p className="flex items-center justify-center gap-2">InfoNav<ScrollText size={20} /> </p>}
         </button>
       </nav>
 
@@ -44,10 +44,10 @@ export default function NavBar() {
             <div className="bg-[rgba(162,169,197,0.95)] mb-2 border border-indigo-300 rounded-3xl relative shadow-2xl w-full max-w-xs mx-auto overflow-hidden text-center">
               <div className="h-[80px] bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')] relative shadow-xl text-gray-600 text-3xl">
                 <div className="flex flex-col h-full pb-2 items-center bg-[rgba(20,55,129,0.29)] justify-center  text-center">
-                  <div className="z-20 flex items-center font-semibold  gap-2 text-[38px]">AetherPulse</div>
+                  <div className="z-20 flex items-center font-semibold  gap-2 text-[38px]">InfoDex</div>
                 </div>
               </div>
-              <ControlHubMenu />
+              <InfoDexMenu />
             </div>
           </motion.div>
         )}

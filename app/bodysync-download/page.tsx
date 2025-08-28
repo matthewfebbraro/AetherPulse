@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import NavBar from "@/components/nav-bar/nav-bar";
+import InfoNavBar from "@/components/nav-bar/infodex-nav-bar";
 import React from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -281,7 +281,7 @@ export default function LandingPage() {
             </div>
             <footer className="bg-gray-900 text-gray-600 py-4 mt-auto">
                 <div className="container mx-auto text-center">
-                    <NavBar />
+                    <InfoNavBar />
                 </div>
             </footer>
         </div>

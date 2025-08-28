@@ -2,6 +2,8 @@
 "use client";
 import { useGlobalData } from "@/app/global-states/GlobalData";
 import BodySyncApp from "@/components/nav-bar/bodysync-button";
+import InfoDexButton from "@/components/nav-bar/infodex-button";
+
 import BodySyncCoreApp from "@/components/nav-bar/bodysync-core-button";
 
 import { useRouter } from 'next/navigation';
@@ -27,17 +29,17 @@ export default function ControlHubMenu() {
           {/*TILE 7*/}
           <BodySyncApp />
           {/*TILE 8*/}
-         
+          <InfoDexButton />
           {/*TILE 9*/}
-      
+
         </div>
         <div className="grid grid-cols-1 gap-2 w-full rounded-xl mb-2">
-          <button
+          <button 
             onClick={() => {
               router.push('/');
               setIsOpen(false);
             }}
-            className="w-full font-semibold h-[78px] text-[25px] rounded-xl pb-2 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
+            className="w-full font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
             AetherHome
           </button>
         </div>
