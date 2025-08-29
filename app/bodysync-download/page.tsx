@@ -18,15 +18,14 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center" >
-            <div
-                className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: "url(/images/home-page-background.jpg)",
-                    minHeight: '100%',
-                    height: '100%',
-                }}
-            />
+        <div className="flex flex-col items-center h-[98dvh]" >            <div
+            className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+                backgroundImage: "url(/images/home-page-background.jpg)",
+                minHeight: '100%',
+                height: '100%',
+            }}
+        />
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
@@ -228,53 +227,55 @@ export default function LandingPage() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/bodysync-v2.4.0.apk";
+                                        window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/bodysync-v2.4.1.apk";
                                     }}
                                     className="bg-[rgba(39,87,133,0.4)] relative mt-2 max-w-sm w-full z-10 flex rounded-xl justify-center h-[85px] z-20 flex-col w-full flex items-center 
             justify-center 
            border border-indigo-300 overflow-hidden">
                                     <p className="absolute pb-6 text-[28px] font-semibold">Unlock Sync Access</p>
-                                    <p className=" absolute pt-6 text-base text-white mt-2 italic">APK Download — 110MB</p>
+                                    <p className=" absolute pt-6 text-base text-white mt-2 italic">APK Download — 113MB</p>
                                 </button>
                             </div>
                         </div>
                     )}
                     <div className="absolute bottom-1 px-1 flex flex-row justify-center w-full">
                         <button
+                            disabled={Page === "1"}
                             onClick={() => {
                                 if (Page === "1") {
-                                    setPage("2")
+                                    setPage("--")
                                 } else if (Page === "2") {
                                     setPage("1")
                                 } else if (Page === "3") {
                                     setPage("2")
                                 } else if (Page === "4") {
-                                    setPage("2")
+                                    setPage("3")
                                 }
                             }}
-                            className="mr-1 w-[50%] border border-indigo-300 rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-3 text-gray-600 transition text-center text-[24px] font-semibold">
-                            {Page === "1" && <p>v.Free</p>}
-                            {Page === "2" && <p>Home</p>}
-                            {Page === "3" && <p>v.Free</p>}
-                            {Page === "4" && <p>v.Free</p>}
+                            className="mr-1 w-[50%] border border-indigo-300 rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-1 text-gray-600 transition text-center text-[18px] font-semibold">
+                            {Page === "1" && <p></p>}
+                            {Page === "2" && <p>Prev</p>}
+                            {Page === "3" && <p>Prev</p>}
+                            {Page === "4" && <p>Prev</p>}
                         </button>
                         <button
+                            disabled={Page === "4"}
                             onClick={() => {
                                 if (Page === "1") {
-                                    setPage("3")
+                                    setPage("2")
                                 } else if (Page === "2") {
                                     setPage("3")
                                 } else if (Page === "3") {
-                                    setPage("1")
+                                    setPage("4")
                                 } else if (Page === "4") {
-                                    setPage("3")
+                                    setPage("--")
                                 }
                             }}
-                            className="ml-2 w-[50%] border border-indigo-300  rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-3 text-gray-600 transition text-center text-[24px] font-semibold">
-                            {Page === "1" && <p>v.Pro</p>}
-                            {Page === "2" && <p>v.Pro</p>}
-                            {Page === "3" && <p>Home</p>}
-                            {Page === "4" && <p>v.Pro</p>}
+                            className="ml-2 w-[50%] border border-indigo-300  rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-1 text-gray-600 transition text-center text-[18px] font-semibold">
+                            {Page === "1" && <p>Next</p>}
+                            {Page === "2" && <p>Next</p>}
+                            {Page === "3" && <p>Next</p>}
+                            {Page === "4" && <p></p>}
                         </button>
                     </div>
                 </div>

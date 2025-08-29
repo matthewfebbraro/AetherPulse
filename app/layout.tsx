@@ -20,10 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/manifest.json" crossOrigin="anonymous" />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/icons/aether-512x512.png" />
-        <link rel="apple-touch-icon" href="/icons/aether-512x512.png" />
 
         <title>Aether Pulse | The Portal to BodySync</title>
         <meta name="description" content="Access the BodySync system — gamify your fitness journey and unlock your synced potential." />

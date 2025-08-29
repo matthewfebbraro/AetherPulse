@@ -18,7 +18,7 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center" >
+        <div className="flex flex-col items-center h-[98dvh]" >
             <div
                 className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
@@ -41,7 +41,7 @@ export default function LandingPage() {
                 <div className="relative flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
                     <div>
                         <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
-                           This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
+                            This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
                         </div>
                     </div>
                 </div>

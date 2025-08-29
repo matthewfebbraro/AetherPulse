@@ -18,15 +18,14 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center" >
-            <div
-                className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: "url(/images/home-page-background.jpg)",
-                    minHeight: '100%',
-                    height: '100%',
-                }}
-            />
+        <div className="flex flex-col items-center h-[98dvh]" >            <div
+            className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+                backgroundImage: "url(/images/home-page-background.jpg)",
+                minHeight: '100%',
+                height: '100%',
+            }}
+        />
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
@@ -39,10 +38,17 @@ export default function LandingPage() {
             </div>
             <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
                 <div className="relative flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
-                    <div>
-                        <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
-                           This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
-                        </div>
+                    <div className="px-4 py-4">
+                        <h2 className="text-lg font-semibold text-gray-600 mb-2">Exercise Library</h2>
+                        <p className="text-[16px] text-gray-600 mb-4">
+                            Browse StrengthLog&apos;s complete movement library to learn proper form and discover new exercises.
+                        </p>
+                        <a
+                            href="https://www.strengthlog.com/exercise-directory/"
+                            className="block text-center px-4 py-3 pt-2 rounded-lg bg-indigo-800 hover:bg-indigo-500 text-white font-medium shadow-md"
+                        >
+                            Open Exercise Directory
+                        </a>
                     </div>
                 </div>
             </div>

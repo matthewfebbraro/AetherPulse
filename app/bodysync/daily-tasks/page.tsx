@@ -18,8 +18,7 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center" >
-            <div
+<div className="flex flex-col items-center h-[98dvh]" >            <div
                 className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url(/images/home-page-background.jpg)",

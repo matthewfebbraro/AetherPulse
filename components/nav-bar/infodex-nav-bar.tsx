@@ -21,7 +21,7 @@ export default function InfoNavBar() {
   return (
     <>
       {/* Fixed bottom bar */}
-      <nav className="fixed bottom-0 left-0 right-0 backdrop-blur-lg bg-[rgba(163,175,236,0.74)] text-gray-600 px-6 py-4 flex items-center justify-center shadow-inner z-50">
+      <nav className="fixed bottom-0 left-0 right-0 backdrop-blur-lg bg-[rgba(163,175,236,0.74)] text-gray-600 px-6 py-2 flex items-center justify-center shadow-inner z-50">
         <button
           onClick={toggleMenu}
           className="text-xl font-bold tracking-wide transition-all"
@@ -39,7 +39,7 @@ export default function InfoNavBar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-[60px] left-0 right-0 z-40 overflow-hidden"
+            className="fixed bottom-[48px] left-0 right-0 z-40 overflow-hidden"
           >
             <div className="bg-[rgba(162,169,197,0.95)] mb-2 border border-indigo-300 rounded-3xl relative shadow-2xl w-full max-w-xs mx-auto overflow-hidden text-center">
               <div className="h-[80px] bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')] relative shadow-xl text-gray-600 text-3xl">

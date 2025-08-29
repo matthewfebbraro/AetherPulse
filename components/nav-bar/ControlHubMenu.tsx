@@ -23,7 +23,7 @@ export default function ControlHubMenu() {
 
 
   return (
-    <div className=" flex flex-col gap-1 z-60 mb-4 mt-3">
+    <div className=" flex flex-col gap-1 z-60 mb-0 mt-3">
       <div className="text-gray-600 rounded-lg p-2 text-center">
         <div className="flex flex-row justify-center gap-2  rounded-xl mb-2">
           {/*TILE 7*/}
@@ -34,12 +34,12 @@ export default function ControlHubMenu() {
 
         </div>
         <div className="grid grid-cols-1 gap-2 w-full rounded-xl mb-2">
-          <button 
+          <button
             onClick={() => {
               router.push('/');
               setIsOpen(false);
             }}
-            className="w-full font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
+            className="w-full mt-2 font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
             AetherHome
           </button>
         </div>
