@@ -21,7 +21,7 @@ export default function LandingPage() {
 <div className="flex flex-col items-center h-[98dvh]" >            <div
                 className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url(/images/home-page-background.jpg)",
+                    backgroundImage: "url(/images/aether-new-back.jpeg)",
                     minHeight: '100%',
                     height: '100%', // Not 100vh!
                 }}
@@ -29,24 +29,24 @@ export default function LandingPage() {
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')]" />
+                    <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
-                    <div className="absolute text-[20px] text-gray-600  mb-14">powered by AetherPulse</div>
-                    <div className="absolute text-[40px] text-gray-600  mt-2">BodySyncCore</div>
+                <div className="relative h-[85px] rounded-2xl  shadow-xl flex flex-col items-center justify-center bg-indigo-800/30">
+                    <div className="absolute text-[20px] text-white  mb-14">powered by AetherPulse</div>
+                    <div className="absolute text-[40px] text-white  mt-2">BodySyncCore</div>
                 </div>
             </div>
-            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
-                <div className="relative flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
+            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  shadow-xl">
+                <div className="relative flex h-[75dvh] flex-col  rounded-xl pb-2 ">
                     {Page === "1" && (
                         <div>
-                            <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
+                            <div className="p-4 text-[18px] text-white mb-2 text-center">
                                 BodySync Core is everything that BodySync is, only stripped down to just the basics. Simple user interface, no gamifed experience, no experience points. no background customization, just tracking. just data.
                             </div>
                             <div className="absolute bottom-20 flex justify-center w-full">
                                 <button onClick={() => setPage("4")} className="relative mt-2 m-3 p-2 flex rounded-xl justify-center h-[85px] z-20 w-[94%] flex items-center 
             justify-center  
-           border border-indigo-300 overflow-hidden">
+            overflow-hidden">
                                     <p className="absolute h-full w-full bg-[rgba(39,87,133,0.4)]" />
                                     <p className="text-[28px] font-semibold pb-1 z-20">Download APK</p>
                                 </button>
@@ -55,10 +55,10 @@ export default function LandingPage() {
                     )}
                     {Page === "2" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Free Version</div>
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Free Version</div>
 
                             <div className="overflow-y-auto h-[380px]">
-                                <div className="p-4 text-gray-600 space-y-2 text-center">
+                                <div className="p-4 text-white space-y-2 text-center">
 
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1 text-gray-500">Track for Free</p>
                                     <p>- You dont need to spend money to make progress. With the free features alone, you can track
@@ -108,9 +108,9 @@ export default function LandingPage() {
                     )}
                     {Page === "3" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Pro Version</div>
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Pro Version</div>
                             <div className="overflow-y-auto h-[380px]">
-                                <div className="p-4 text-gray-600 space-y-2 text-center">
+                                <div className="p-4 text-white space-y-2 text-center">
 
                                     <p className="text-[28px] font-semibold bg-white/30 rounded-xl pb-1 text-gray-500">$5.00 Subscription</p>
                                     <p>- Unlock every premium feature for only $5/month. No grind, no hidden costs — just tools to push your progress further</p>
@@ -156,9 +156,9 @@ export default function LandingPage() {
                     )}
                     {Page === "4" && (
                         <div>
-                            <div className="font-semibold text-[36px] text-gray-600 mb-2 text-center bg-[rgba(20,55,129,0.29)] w-full pb-1">Pre-Release Access</div>
+                            <div className="font-semibold text-[36px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Pre-Release Access</div>
                             <div className="p-4 overflow-y-auto h-[380px]">
-                                <div className="text-gray-600 space-y-2 text-center">
+                                <div className="text-white space-y-2 text-center">
                                     <p className="text-[18px] pt-2 pb-3 px-3 font-semibold bg-white/30 rounded-xl pb-1 text-center text-gray-500 text-lg italic mt-2">
                                         Scroll down to access your download & installation guide.
                                     </p>
@@ -182,10 +182,10 @@ export default function LandingPage() {
                                 <div className="mt-2 max-w-sm z-10 flex rounded-xl justify-center h-[85px] z-20 w-full flex items-center 
             justify-center bg-contain bg-center bg-no-repeat bg-[url('/images/android-banner.png')] ">
                                 </div>
-                                <div className="text-gray-600 space-y-2 text-center">
+                                <div className="text-white space-y-2 text-center">
                                     <p>BodySync is only available on <span className="font-semibold">Android</span>.</p>
                                 </div>
-                                <div className="mt-2 bg-indigo-300/45 border border-white/20 rounded-xl p-4 text-gray-600 space-y-2 text-sm">
+                                <div className="mt-2 bg-indigo-300/45 border border-white/20 rounded-xl p-4 text-white space-y-2 text-sm">
                                     <p className="font-semibold">How to Install</p>
                                     <p>
                                         This app is not from the Play Store, so Android may block the install at first.
@@ -195,7 +195,7 @@ export default function LandingPage() {
                                         <span className="font-semibold"> “Allow from this source”</span>.
                                         Then return and tap <span className="italic">“Install”</span> again.
                                     </p>
-                                    <p className="text-gray-600/50 italic text-center">You only need to do this once.</p>
+                                    <p className="text-white/50 italic text-center">You only need to do this once.</p>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -203,7 +203,7 @@ export default function LandingPage() {
                                     }}
                                     className="bg-[rgba(39,87,133,0.4)] relative mt-2 max-w-sm w-full z-10 flex rounded-xl justify-center h-[85px] z-20 flex-col w-full flex items-center 
             justify-center 
-           border border-indigo-300 overflow-hidden">
+            overflow-hidden">
                                     <p className="absolute pb-6 text-[28px] font-semibold">Unlock Sync Access</p>
                                     <p className=" absolute pt-6 text-base text-white mt-2 italic">APK Download — 97MB</p>
                                 </button>
@@ -223,7 +223,7 @@ export default function LandingPage() {
                                     setPage("2")
                                 }
                             }}
-                            className="mr-1 w-[50%] border border-indigo-300 rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-3 text-gray-600 transition text-center text-[24px] font-semibold">
+                            className="mr-1 w-[50%]  rounded-xl bg-indigo-800/30 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
                             {Page === "1" && <p>v.Free</p>}
                             {Page === "2" && <p>Home</p>}
                             {Page === "3" && <p>v.Free</p>}
@@ -241,7 +241,7 @@ export default function LandingPage() {
                                     setPage("3")
                                 }
                             }}
-                            className="ml-2 w-[50%] border border-indigo-300  rounded-xl bg-[rgba(20,55,129,0.29)] px-4 py-3 text-gray-600 transition text-center text-[24px] font-semibold">
+                            className="ml-2 w-[50%]   rounded-xl bg-indigo-800/30 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
                             {Page === "1" && <p>v.Pro</p>}
                             {Page === "2" && <p>v.Pro</p>}
                             {Page === "3" && <p>Home</p>}
@@ -250,7 +250,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
-            <footer className="bg-gray-900 text-gray-600 py-4 mt-auto">
+            <footer className="bg-gray-900 text-white py-4 mt-auto">
                 <div className="container mx-auto text-center">
                     <InfoNavBar />
                 </div>

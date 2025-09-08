@@ -22,7 +22,7 @@ export default function InfoDexMenu() {
 
   return (
     <div className=" flex flex-col gap-1 z-60 mb-0 mt-3">
-      <div className="text-gray-600 rounded-lg p-2 text-center">
+      <div className="text-white rounded-lg p-2 text-center">
         <div className="grid grid-cols-1 gap-2 w-full rounded-xl mb-2">
         </div>
         <div className="h-[260px] w-full flex flex-cols-1 w-full justify-center rounded-xl mb-2">
@@ -32,35 +32,35 @@ export default function InfoDexMenu() {
                 router.push('/bodysync');
                 setIsOpen(false);
               }}
-              className="w-full font-semibold h-[45px] text-[23px] leading-sm flex flex-col justify-center items-center text-gray-600 ">
+              className="w-full font-semibold h-[45px] text-[23px] leading-sm flex flex-col justify-center items-center text-white ">
               InfoDex Home
             </button>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/login" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Login</Link>
-            <Link href="/bodysync/register" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Register</Link>
-            <Link href="/bodysync/sync-sim" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Sync Sim</Link>
-            <Link href="/bodysync/pro" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Pro Unlock</Link>
+            <Link href="/bodysync/login" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Login</Link>
+            <Link href="/bodysync/register" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Register</Link>
+            <Link href="/bodysync/sync-sim" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Sim</Link>
+            <Link href="/bodysync/pro" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Pro Unlock</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/overview" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Daily Sync</Link>
-            <Link href="/bodysync/sync-report" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Sync Report</Link>
-            <Link href="/bodysync/sync-analysis" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Sync Analysis</Link>
-            <Link href="/bodysync/sync-override" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Sync Override</Link>
+            <Link href="/bodysync/overview" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Daily Sync</Link>
+            <Link href="/bodysync/sync-report" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Report</Link>
+            <Link href="/bodysync/sync-analysis" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Analysis</Link>
+            <Link href="/bodysync/sync-override" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Override</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/experience" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Experience</Link>
-            <Link href="/bodysync/hidden-glyphs" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Hidden Glyphs</Link>
+            <Link href="/bodysync/experience" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Experience</Link>
+            <Link href="/bodysync/hidden-glyphs" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Hidden Glyphs</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/biometric-settings" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Biometric Settings</Link>
-            <Link href="/bodysync/custom-settings" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Custom Settings</Link>
-            <Link href="/bodysync/goal-settings" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Goal Settings</Link>
+            <Link href="/bodysync/biometric-settings" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Biometric Settings</Link>
+            <Link href="/bodysync/custom-settings" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Custom Settings</Link>
+            <Link href="/bodysync/goal-settings" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Goal Settings</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/nutrition-log" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Nutrition Log</Link>
-            <Link href="/bodysync/energy-burn" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Energy Burn</Link>
+            <Link href="/bodysync/nutrition-log" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Nutrition Log</Link>
+            <Link href="/bodysync/energy-burn" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Energy Burn</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/fitness-tracker" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Fitness Tracker</Link>
-            <Link href="/bodysync/personal-records" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Personal Records</Link>
-            <Link href="/bodysync/repsync" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">RepSync</Link>
+            <Link href="/bodysync/fitness-tracker" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Fitness Tracker</Link>
+            <Link href="/bodysync/personal-records" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Personal Records</Link>
+            <Link href="/bodysync/repsync" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">RepSync</Link>
             <p className="p-1 mx-5 bg-white/30 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/daily-tasks" onClick={() => { setIsOpen(false) }} className="text-gray-600 font-semibold">Daily Tasks</Link>
+            <Link href="/bodysync/daily-tasks" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Daily Tasks</Link>
           </div>
 
         </div>
@@ -70,7 +70,7 @@ export default function InfoDexMenu() {
               router.push('/');
               setIsOpen(false);
             }}
-            className="w-full mt-2 font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-gray-600 shadow-md">
+            className="w-full mt-2 font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-white shadow-md">
             Explore AetherPulse
           </button>
         </div>

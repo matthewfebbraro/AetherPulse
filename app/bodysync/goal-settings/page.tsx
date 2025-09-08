@@ -21,7 +21,7 @@ export default function LandingPage() {
 <div className="flex flex-col items-center h-[98dvh]" >            <div
                 className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url(/images/home-page-background.jpg)",
+                    backgroundImage: "url(/images/aether-new-back.jpeg)",
                     minHeight: '100%',
                     height: '100%',
                 }}
@@ -29,23 +29,23 @@ export default function LandingPage() {
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')]" />
+                    <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
-                    <div className="absolute text-[20px] text-gray-600 font-semibold  mb-14">BodySync InfoDex</div>
-                    <div className="absolute text-[40px] text-gray-600 font-semibold  mt-2">Goal Settings</div>
+                <div className="relative h-[85px] rounded-2xl  shadow-xl flex flex-col items-center justify-center bg-indigo-800/30">
+                    <div className="absolute text-[20px] text-white font-semibold  mb-14">BodySync InfoDex</div>
+                    <div className="absolute text-[40px] text-white font-semibold  mt-2">Goal Settings</div>
                 </div>
             </div>
-            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
-                <div className="relative flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
+            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  shadow-xl">
+                <div className="relative flex h-[75dvh] flex-col  rounded-xl pb-2 ">
                     <div>
-                        <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
+                        <div className="p-4 text-[18px] text-white mb-2 text-center">
                            This section is still under construction. Soon it will be filled with detailed guides, tips, and insights to help you get the most out of BodySync. Check back often — new information is always being added.
                         </div>
                     </div>
                 </div>
             </div>
-            <footer className="bg-gray-900 text-gray-600 py-4 mt-auto">
+            <footer className="bg-gray-900 text-white py-4 mt-auto">
                 <div className="container mx-auto text-center">
                     <InfoNavBar />
                 </div>

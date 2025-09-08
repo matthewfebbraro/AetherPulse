@@ -18,36 +18,36 @@ export default function LandingPage() {
     };
 
     return (
-<div className="flex flex-col items-center h-[98dvh]" >            <div
-                className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: "url(/images/home-page-background.jpg)",
-                    minHeight: '100%',
-                    height: '100%', // Not 100vh!
-                }}
-            />
+        <div className="flex flex-col items-center h-[98dvh]" >            <div
+            className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+                backgroundImage: "url(/images/aether-new-back.jpeg)",
+                minHeight: '100%',
+                height: '100%', // Not 100vh!
+            }}
+        />
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/images/aether-logo-image.jpg')]" />
+                    <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl border border-indigo-300 shadow-xl flex flex-col items-center justify-center bg-[rgba(20,55,129,0.29)]">
-                    <div className="absolute text-[20px] text-gray-600 font-semibold  mb-12 mr-28">powered by</div>
-                    <div className="absolute text-[40px] text-gray-600 font-semibold  mt-2">AetherPulse</div>
+                <div className="relative h-[85px] rounded-2xl  shadow-xl flex flex-col items-center justify-center bg-indigo-800/30">
+                    <div className="absolute text-[20px] text-white font-semibold  mb-12 mr-28">powered by</div>
+                    <div className="absolute text-[40px] text-white font-semibold  mt-2">AetherPulse</div>
 
                 </div>
             </div>
             {Page === "1" && (
                 <div>
-                    <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden border border-indigo-300 shadow-xl">
-                        <div className="flex h-[75dvh] flex-col bg-[rgba(77,89,150,0.3)] rounded-xl pb-2 ">
+                    <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  shadow-xl">
+                        <div className="flex h-[75dvh] flex-col  rounded-xl pb-2 ">
 
-                            <div className="p-4 text-[18px] text-gray-600 mb-2 text-center">
+                            <div className="p-4 text-[18px] text-white mb-2 text-center">
                                 AetherPulse is a database-driven ecosystem of apps designed to help you track, analyze,
                                 and transform your life—physically, mentally, and beyond.
                             </div>
 
-                            <div className="text-xl font-semibold text-center text-gray-600 mb-4">Available Apps</div>
+                            <div className="text-xl font-semibold text-center text-white mb-4">Available Apps</div>
 
                             <div className="flex flex-row justify-center w-full">
                                 <button onClick={() => {
@@ -57,9 +57,9 @@ export default function LandingPage() {
                                     <div className="bg-cover bg-center bg-no-repeat bg-[url('/icons/bodysync-icon.png')] rounded-xl h-[150px] w-[150px]">
                                         <div className="text-lg font-bold text-white mb-1 text-center ">BodySync</div>
                                     </div>
-                                    <div className="text-lg font-bold text-gray-600 mb-1 text-center">Gamified Health & Fitness Journey</div>
+                                    <div className="text-lg font-bold text-white mb-1 text-center">Gamified Health & Fitness Journey</div>
                                 </button>
-                               
+
                                 {/* Add more app cards here */}
                             </div>
                         </div>
