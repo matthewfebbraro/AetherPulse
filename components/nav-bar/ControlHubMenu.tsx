@@ -31,17 +31,6 @@ export default function ControlHubMenu() {
           {/*TILE 8*/}
           <InfoDexButton />
           {/*TILE 9*/}
-
-        </div>
-        <div className="grid grid-cols-1 gap-2 w-full rounded-xl mb-2">
-          <button
-            onClick={() => {
-              router.push('/');
-              setIsOpen(false);
-            }}
-            className="w-full mt-2 font-semibold h-[45px] text-[20px] rounded-xl pb-1 leading-sm flex flex-col justify-center items-center bg-white/20 backdrop-blur  text-white shadow-md">
-            AetherHome
-          </button>
         </div>
       </div>
     </div>

@@ -18,25 +18,25 @@ export default function LandingPage() {
     };
 
     return (
-<div className="flex flex-col items-center h-[98dvh]" >            <div
-                className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: "url(/images/aether-new-back.jpeg)",
-                    minHeight: '100%',
-                    height: '100%',
-                }}
-            />
+        <div className="flex flex-col items-center h-[98dvh]" >            <div
+            className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+                backgroundImage: "url(/images/background-hex.jpg)",
+                minHeight: '100%',
+                height: '100%',
+            }}
+        />
 
             <div className="mt-2 w-full max-w-sm relative">
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
                     <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl  shadow-xl flex flex-col items-center justify-center bg-indigo-800/30">
+                <div className="relative h-[85px] rounded-2xl   flex flex-col items-center justify-center bg-indigo-800/50">
                     <div className="absolute text-[20px] text-white font-semibold  mb-14">powered by BodySync</div>
-                    <div className="absolute text-[40px] text-white font-semibold  mt-2">InfoDex</div> 
+                    <div className="absolute text-[40px] text-white font-semibold  mt-2">InfoDex</div>
                 </div>
             </div>
-            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  shadow-xl">
+            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden">
                 <div className="relative flex h-[75dvh] flex-col  rounded-xl pb-2 ">
                     <div>
                         <div className="p-4 text-[18px] text-white mb-2 text-center">
@@ -52,7 +52,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
-            <footer className="bg-gray-900 text-white py-4 mt-auto">
+            <footer className="text-white py-4 mt-auto">
                 <div className="container mx-auto text-center">
                     <InfoNavBar />
                 </div>

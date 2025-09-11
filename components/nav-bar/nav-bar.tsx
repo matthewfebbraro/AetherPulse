@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import ControlHubMenu from './ControlHubMenu';
 import { Crown, Flame, Zap, Star, Shield, Atom, Heart, Bird } from 'lucide-react';
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from 'next/navigation';
 
 export default function NavBar() {
 
@@ -11,6 +12,7 @@ export default function NavBar() {
     const next = !isOpen;
     setIsOpen(next);
   };
+  const router = useRouter();
 
   const selectedPage = useGlobalData((s) => s.selectedPage);
   const setSelectedPage = useGlobalData((s) => s.setSelectedPage);
@@ -41,10 +43,20 @@ export default function NavBar() {
             transition={{ duration: 0.2 }}
             className="fixed bottom-[48px] left-0 right-0 z-40 overflow-hidden"
           >
-            <div className="bg-black mb-2  rounded-3xl relative shadow-2xl w-full max-w-xs mx-auto overflow-hidden text-center">
-              <div className="h-[80px] bg-cover bg-center bg-no-repeat  relative shadow-xl text-white text-3xl">
-                <div className="flex flex-col h-full pb-2 items-center bg-indigo-800/30 justify-center  text-center">
-                  <div className="z-20 flex items-center font-semibold  gap-2 text-[38px]">AetherPulse</div>
+            <div className="bg-black rounded-3xl relative shadow-2xl w-full max-w-xs mx-auto overflow-hidden text-center">
+              <div className="h-[120px] bg-cover bg-center bg-no-repeat  relative  text-white text-3xl">
+                <div className="flex flex-col h-full  w-full items-center bg-indigo-800/50 justify-center  text-center">
+                  <div className="z-20 flex items-center font-semibold pb-2 gap-2 text-[38px]">AetherPulse</div>
+                  <div className="grid grid-cols-1 gap-2 w-full rounded-xl">
+                    <button
+                      onClick={() => {
+                        router.push('/');
+                        setIsOpen(false);
+                      }}
+                      className=" mx-5 font-semibold h-[45px] text-[20px] rounded-xl leading-sm flex flex-col justify-center items-center bg-indigo-800/20  backdrop-blur  text-white shadow-md">
+                      AetherHome
+                    </button>
+                  </div>
                 </div>
               </div>
               <ControlHubMenu />

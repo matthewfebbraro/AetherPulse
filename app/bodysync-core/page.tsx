@@ -21,7 +21,7 @@ export default function LandingPage() {
 <div className="flex flex-col items-center h-[98dvh]" >            <div
                 className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url(/images/aether-new-back.jpeg)",
+                    backgroundImage: "url(/images/background-hex.jpg)",
                     minHeight: '100%',
                     height: '100%', // Not 100vh!
                 }}
@@ -31,12 +31,12 @@ export default function LandingPage() {
                 <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
                     <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl  shadow-xl flex flex-col items-center justify-center bg-indigo-800/30">
+                <div className="relative h-[85px] rounded-2xl   flex flex-col items-center justify-center bg-indigo-800/50">
                     <div className="absolute text-[20px] text-white  mb-14">powered by AetherPulse</div>
                     <div className="absolute text-[40px] text-white  mt-2">BodySyncCore</div>
                 </div>
             </div>
-            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  shadow-xl">
+            <div className="mt-2 h-[75dvh] relative max-w-sm rounded-xl overflow-hidden  ">
                 <div className="relative flex h-[75dvh] flex-col  rounded-xl pb-2 ">
                     {Page === "1" && (
                         <div>
@@ -55,7 +55,7 @@ export default function LandingPage() {
                     )}
                     {Page === "2" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Free Version</div>
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/50 w-full pb-1">Free Version</div>
 
                             <div className="overflow-y-auto h-[380px]">
                                 <div className="p-4 text-white space-y-2 text-center">
@@ -108,7 +108,7 @@ export default function LandingPage() {
                     )}
                     {Page === "3" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Pro Version</div>
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/50 w-full pb-1">Pro Version</div>
                             <div className="overflow-y-auto h-[380px]">
                                 <div className="p-4 text-white space-y-2 text-center">
 
@@ -156,7 +156,7 @@ export default function LandingPage() {
                     )}
                     {Page === "4" && (
                         <div>
-                            <div className="font-semibold text-[36px] text-white mb-2 text-center bg-indigo-800/30 w-full pb-1">Pre-Release Access</div>
+                            <div className="font-semibold text-[36px] text-white mb-2 text-center bg-indigo-800/50 w-full pb-1">Pre-Release Access</div>
                             <div className="p-4 overflow-y-auto h-[380px]">
                                 <div className="text-white space-y-2 text-center">
                                     <p className="text-[18px] pt-2 pb-3 px-3 font-semibold bg-white/30 rounded-xl pb-1 text-center text-gray-500 text-lg italic mt-2">
@@ -223,7 +223,7 @@ export default function LandingPage() {
                                     setPage("2")
                                 }
                             }}
-                            className="mr-1 w-[50%]  rounded-xl bg-indigo-800/30 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
+                            className="mr-1 w-[50%]  rounded-xl bg-indigo-800/50 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
                             {Page === "1" && <p>v.Free</p>}
                             {Page === "2" && <p>Home</p>}
                             {Page === "3" && <p>v.Free</p>}
@@ -241,7 +241,7 @@ export default function LandingPage() {
                                     setPage("3")
                                 }
                             }}
-                            className="ml-2 w-[50%]   rounded-xl bg-indigo-800/30 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
+                            className="ml-2 w-[50%]   rounded-xl bg-indigo-800/50 px-4 py-3 text-white transition text-center text-[24px] font-semibold">
                             {Page === "1" && <p>v.Pro</p>}
                             {Page === "2" && <p>v.Pro</p>}
                             {Page === "3" && <p>Home</p>}
@@ -250,7 +250,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
-            <footer className="bg-gray-900 text-white py-4 mt-auto">
+            <footer className=" text-white py-4 mt-auto">
                 <div className="container mx-auto text-center">
                     <InfoNavBar />
                 </div>
