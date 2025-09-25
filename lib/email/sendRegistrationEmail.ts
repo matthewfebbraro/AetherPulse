@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export async function sendRegistrationEmail(toEmail: string, username: string) {
+export async function sendRegistrationEmail(email: string, username: string) {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -11,7 +11,7 @@ export async function sendRegistrationEmail(toEmail: string, username: string) {
 
   const mailOptions = {
     from: '"BodySync - AetherPulse" <aetherpulse.one@gmail.com>',
-    to: toEmail,
+    to: email,
     subject: 'Welcome to BodySync!',
     html: `
       <h1>Welcome, ${username}!</h1>
