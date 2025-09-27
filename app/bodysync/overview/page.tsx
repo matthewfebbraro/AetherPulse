@@ -126,7 +126,7 @@ export default function LandingPage() {
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
                             You can set your personal water intake goal in GOAL SETTINGS (found in the ControlHub).
-                            Once set, you'll see your progress bar update as you log water throughout the day.
+                            Once set, you&apos;ll see your progress bar update as you log water throughout the day.
                         </div>
                         <div className="p-2 px-8 text-[18px] text-white text-center">
                             But remember: the goal isn&apos;t perfect tracking — it&apos;s improved awareness.
@@ -161,7 +161,7 @@ export default function LandingPage() {
                             ● Pro version: +20 bonus experience points
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
-                            Look for the glowing bar, it&apos;s your sign that you're eligible to claim your XP.
+                            Look for the glowing bar, it&apos;s your sign that you&apos;re eligible to claim your XP.
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
                             This small loop helps keep your momentum going, one sync at a time. Progress doesn&apos;t
@@ -198,11 +198,11 @@ export default function LandingPage() {
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
                             MasterSync requires an internet connection. It is not recommended to perform a MasterSync while using
-                            cellular data, or when you're moving (like on a bus or in a vehicle).
+                            cellular data, or when you&apos;re moving (like on a bus or in a vehicle).
                             Unstable connections may result in data loss, and a proper sync cannot be guaranteed.
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
-                            For best results Always perform MasterSync over Wi-Fi, ideally when you're home or on a stable network.
+                            For best results Always perform MasterSync over Wi-Fi, ideally when you&apos;re home or on a stable network.
                         </div>
                         <div className="text-[20px] text-white text-center font-semibold">
                             Offline Mode
@@ -264,7 +264,7 @@ export default function LandingPage() {
                             SYNC SIMULATOR
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
-                            This is the Total Daily Energy Expenditure (TDEE) calculator that powers BodySync's Energy Burn system.
+                            This is the Total Daily Energy Expenditure (TDEE) calculator that powers BodySync&apos;s Energy Burn system.
                         </div>
                         <div className="p-2 text-[18px] text-white text-center">
                             Use it to:
