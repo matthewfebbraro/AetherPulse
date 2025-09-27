@@ -18,20 +18,20 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center h-[98dvh]" >            
-        <div
-            className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{
-                backgroundImage: "url(/images/background-hex.jpg)",
-                minHeight: '100%',
-                height: '100%',
-            }}
-        />
-            <div className="mt-2 w-full max-w-sm relative">
-                <div className=" w-full  absolute inset-0 rounded-2xl overflow-hidden">
+        <div className="flex flex-col items-center h-[98dvh]" >
+            <div
+                className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                style={{
+                    backgroundImage: "url(/images/background-hex.jpg)",
+                    minHeight: '100%',
+                    height: '100%',
+                }}
+            />
+            <div className="w-full relative">
+                <div className=" w-full absolute inset-0 rounded-2xl overflow-hidden">
                     <div className="w-full h-full bg-cover bg-center bg-no-repeat " />
                 </div>
-                <div className="relative h-[85px] rounded-2xl   flex flex-col items-center justify-center bg-indigo-800/50 ">
+                <div className="relative h-[85px] flex flex-col items-center justify-center bg-indigo-800/50 pt-1">
                     <div className="absolute text-[20px] text-white font-semibold  mb-14">powered by AetherPulse</div>
                     <div className="absolute text-[40px] text-white font-semibold  mt-2">BodySync</div>
                 </div>
@@ -49,7 +49,7 @@ export default function LandingPage() {
                                 you actually want to keep playing.
                             </div>
                             <div className="absolute bottom-20 flex justify-center w-full">
-                                <button onClick={() => setPage("4")} className="relative flex rounded-xl justify-center h-[85px] z-20 w-[100%] flex items-center 
+                                <button onClick={() => setPage("4")} className="relative flex justify-center h-[85px] z-20 w-[100%] flex items-center 
             justify-center  
             overflow-hidden">
                                     <p className="absolute h-full w-full  bg-indigo-800/50" />
@@ -60,8 +60,8 @@ export default function LandingPage() {
                     )}
                     {Page === "2" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/50  w-full pb-1">Free Version</div>
- 
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center w-full pb-1">Free Version</div>
+
                             <div className="overflow-y-auto h-[390px]">
                                 <div className="p-4 text-white space-y-2 text-center">
 
@@ -131,7 +131,7 @@ export default function LandingPage() {
                     )}
                     {Page === "3" && (
                         <div>
-                            <div className="font-semibold text-[42px] text-white mb-2 text-center bg-indigo-800/50  w-full pb-1">Pro Version</div>
+                            <div className="font-semibold text-[42px] text-white mb-2 text-center  w-full pb-1">Pro Version</div>
                             <div className="overflow-y-auto h-[390px]">
                                 <div className="p-4 text-white space-y-2 text-center">
 
@@ -182,7 +182,7 @@ export default function LandingPage() {
                     {Page === "4" && (
                         <div >
                             <div className="h-[390px]">
-                                <div className=" bg-indigo-800/50  rounded-xl p-4 text-white space-y-2 text-sm">
+                                <div className=" p-4 text-white space-y-2 text-sm">
                                     <p className="font-semibold">How to Install</p>
                                     <p>
                                         This app is not from the Play Store, so Android may block the install at first.
@@ -193,26 +193,26 @@ export default function LandingPage() {
                                         Then return and tap <span className="italic">“Install”</span> again.
                                     </p>
                                     <p className="text-white/50 italic text-center">You only need to do this once.</p>
-                                     <div className="text-white space-y-2 text-center">
-                                   
-                                    <p>If you encounter any issues or have feedback to share, please contact us at
-                                        <a href="mailto:aetherpulse.one@gmail.com" className="underline text-blue-500 ml-1">
-                                            aetherpulse.one@gmail.com
-                                        </a>.
-                                    </p>
-                                    <p>
-                                        Your insights are deeply appreciated as we continue refining the experience.
-                                    </p>
+                                    <div className="text-white space-y-2 text-center">
+
+                                        <p>If you encounter any issues or have feedback to share, please contact us at
+                                            <a href="mailto:aetherpulse.one@gmail.com" className="underline text-blue-500 ml-1">
+                                                aetherpulse.one@gmail.com
+                                            </a>.
+                                        </p>
+                                        <p>
+                                            Your insights are deeply appreciated as we continue refining the experience.
+                                        </p>
+                                    </div>
                                 </div>
-                                </div>
-                                 <div className="text-white space-y-2 mt-2 text-center">
+                                <div className="text-white space-y-2 mt-2 text-center">
                                     <p className="font-semibold text-white/70">BodySync is curently only available on <span className="text-white font-semibold">Android</span>.</p>
                                 </div>
                                 <button
                                     onClick={() => {
                                         window.location.href = "https://pub-3363d301a0464ea9b80627e178331274.r2.dev/bodysync-app.apk";
                                     }}
-                                    className="bg-indigo-800/60 relative mt-2 max-w-sm w-full z-10 flex rounded-xl justify-center h-[85px] z-20 flex-col w-full flex items-center 
+                                    className="bg-indigo-800/60 relative mt-2 max-w-sm w-full z-10 flex  justify-center h-[85px] z-20 flex-col w-full flex items-center 
             justify-center 
             overflow-hidden">
                                     <p className="absolute pb-6 text-[28px] font-semibold">Unlock Sync Access</p>

@@ -41,7 +41,7 @@ export default function InfoDexMenu() {
             <Link href="/bodysync/sync-sim" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Sim</Link>
             <Link href="/bodysync/pro" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Pro Unlock</Link>
             <p className="p-1 mx-5 flex items-center rounded-xl"></p>
-            <Link href="/bodysync/overview" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Daily Sync</Link>
+            <Link href="/bodysync/overview" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Overview</Link>
             <Link href="/bodysync/sync-report" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Report</Link>
             <Link href="/bodysync/sync-analysis" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Analysis</Link>
             <Link href="/bodysync/sync-override" onClick={() => { setIsOpen(false) }} className="text-white font-semibold">Sync Override</Link>
